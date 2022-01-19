@@ -1,0 +1,59 @@
+.task-list {
+  width: 800px;
+  padding-left: 0;
+}
+.interface {
+  width: 805px;
+  background-color: #ebb582;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.heading {
+  text-align: center;
+}
+.task {
+  display: grid;
+  grid-template-columns: 640px 100px;
+  grid-template-areas:
+    "task-text task-done-button"
+    "task-text task-delete-button"
+    "task-text task-change-button";
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 10px;
+  line-break: anywhere;
+  margin-bottom: 10px;
+  border: solid 1px;
+  background-color: #d24136;
+}
+.task-field {
+  width: 603px;
+}
+.task-done {
+  background-color: #eb8a3e;
+}
+.task-done p {
+  text-decoration: line-through;
+}
+.task-text {
+  grid-area: task-text;
+  font-size: 150%;
+  text-align: left;
+  margin-top: 10px;
+}
+.task-done-button {
+  grid-area: task-done-button;
+  height: 30px;
+  margin: 0;
+}
+.task-delete-button {
+  grid-area: task-delete-button;
+  height: 30px;
+  margin: 0;
+}
+.task-change-button {
+  grid-area: task-change-button;
+  height: 30px;
+  margin: 0;
+}
