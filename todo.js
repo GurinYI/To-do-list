@@ -69,6 +69,13 @@ buttonAddTask.onclick = function () {
     };
   }
 };
+
+document.addEventListener("keyup", function (event) {
+  if (event.code === "Enter") {
+    buttonAddTask.click();
+  }
+});
+
 buttonClear.onclick = function () {
   let tasksDone = document.querySelectorAll(".task-done");
 
